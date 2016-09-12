@@ -1,0 +1,8 @@
+﻿<table>
+    <tr>
+        <td ng-repeat="img in images">
+                <img class="img-responsive" src="{{img.image}}" />
+                <input ng-show="enableRemove" type="button" value="DELETE" ng-click="remove($index)" />
+        </td>
+    </tr>
+</table>

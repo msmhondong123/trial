@@ -1,0 +1,34 @@
+﻿<div>
+    <table>
+        <tr>
+            <td>
+                <link rel="stylesheet" type="text/css" href="/Assets/js/directives/template1/ui/newsComponents/newsContainer/css/newsContainer.css" />
+                <div ng-show="allowModifyNews">
+                    <input ng-click="ModifyNews('edit', index)" type="button" value="EDIT" />
+                    <input ng-click="ModifyNews('delete', index)" type="button" value="DELETE" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1 ng-bind="news.title"></h1>
+                <h2 ng-bind="news.content"></h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <display-image images="news.images"></display-image>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <playlist-component videos="news.videos"></playlist-component>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>

@@ -1,0 +1,26 @@
+﻿<section>
+    <div>
+        <h1>Inbox Section</h1>
+        <table>
+            <tr>
+                <td>
+                    <table style="overflow-y:scroll; display:block; height:300px; width:200px">
+                        <tr ng-repeat="item in items">
+                            <td>
+                                <button ng-click="showInformation(item)">{{item.user}}</button>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <div>
+                        <h1 ng-bind="sUser"></h1>
+                        <h3 ng-bind="sSubject"></h3>
+                        <p ng-bind="sBody"></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
